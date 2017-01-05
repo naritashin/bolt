@@ -29,8 +29,7 @@ a {
 
 .header__container,
 .key__visual__inner,
-.what__container
-.work {
+.what__container {
   max-width: 1170px;
   margin: auto;
 }
@@ -123,6 +122,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 1.1;
+  word-wrap: break-word;
 }
 
 .key__visual__content {
@@ -137,21 +137,18 @@ h1 {
 .what {
   padding-top: 50px;
   background: #74cfae;
-}
-
-.what__container {
-  margin: auto;
+  font-size: 0;
 }
 
 .what__phone__img {
   display: inline-block;
-  width: 488px;
+  width: 41.65%;
 }
 
 .what__inner {
   display: inline-block;
-  width: 682px;
-  padding: 15px;
+  width: 58.35%;
+  margin-top: 15px;
   vertical-align: top;
 }
 
@@ -163,16 +160,19 @@ h1 {
 }
 
 .what__content {
+  padding: 0 15px;
   margin-top: 36px;
   color: #fff;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
 }
 
 /*work*/
 .work {
-  padding: 60px 0 70px;
+  max-width: 1200px;
+  padding: 60px 0 30px;
+  margin: auto;
 }
 
 .work__title {
@@ -183,7 +183,7 @@ h1 {
 
 .work__container {
   width: 1200px;
-  margin: 40px auto 0;
+  margin: 40px 0;
 }
 
 .work__inner:nth-child(2) {
@@ -192,7 +192,7 @@ h1 {
 
 .work__inner > li {
   display: inline-block;
-  width: 400px;
+  width: 33.33%;
 }
 
 .img__contents a {
@@ -241,7 +241,7 @@ h1 {
 
 /*skill*/
 .skill {
-  width: 1200px;
+  min-width: 1200px;
   padding: 70px 0 109px;
   background: #4e4e4e;
   color: #fff;
@@ -295,16 +295,18 @@ h1 {
 }
 
 footer {
-  padding: 26px 15px 30px;
+  padding: 26px 0 30px;
   background: #74cfae;
   text-align: right;
 }
 
 .footer__copylight {
-  max-width: 1230.5px;
+  display: inline-block;
+  margin-right: 15px;
   color: #fff;
   font-size: 16px;
   font-weight: 200;
+  text-align: right;
 }
 
 @media (max-width: 1199px) {
@@ -316,8 +318,12 @@ footer {
   .what__inner {
     display: block;
     width: auto;
-    max-width: 747px;
-    margin: auto;
+    max-width: 970px;
+    margin: 21px auto 15px;
+  }
+
+  .what__phone__img {
+    max-width: 100%;
   }
 
   /*work*/
@@ -338,6 +344,7 @@ footer {
   .work__txt {
     display: block;
     width: 100%;
+    padding: 0 15px;
   }
 
   .work__mail {
@@ -348,7 +355,7 @@ footer {
 
   /*skill*/
   .skill {
-    width: 100%;
+    min-width: 100%;
   }
 
   .skill__inner {
@@ -367,6 +374,16 @@ footer {
 }
 
 @media (max-width: 991px) {
+  /*what*/
+  .what__inner {
+    max-width: 747px;
+  }
+
+  /*work*/
+  .work__txt {
+    max-width: 747px;
+    margin: auto;
+  }
   /*sosial*/
   .sosial {
     padding: 200px 15px;
@@ -375,6 +392,7 @@ footer {
   .sosial__inner > li {
     display: block;
     max-width: 750px;
+    margin: auto;
   }
 
   .fa-facebook,
@@ -386,6 +404,7 @@ footer {
 }
 
 @media (max-width: 767px) {
+  /*header*/
   .header__container {
     margin: auto;
   }
@@ -416,5 +435,10 @@ footer {
 
   .is-active {
     display: block;
+  }
+
+  /*work*/
+  .work__txt {
+    font-size: 16px;
   }
 }
