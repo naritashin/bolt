@@ -145,12 +145,12 @@ h1 {
 
 .what__phone__img {
   display: inline-block;
-  width: 41.7%;
+  width: 488px;
 }
 
 .what__inner {
   display: inline-block;
-  width: 58.3%;
+  width: 682px;
   padding: 15px;
   vertical-align: top;
 }
@@ -309,10 +309,6 @@ footer {
 
 @media (max-width: 1199px) {
   /*what*/
-  .what {
-    padding-top: 50px;
-  }
-
   .what__container {
     padding-bottom: 10px;
   }
@@ -320,7 +316,7 @@ footer {
   .what__inner {
     display: block;
     width: auto;
-    max-width: 970px;
+    max-width: 747px;
     margin: auto;
   }
 
