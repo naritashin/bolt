@@ -161,11 +161,11 @@ h1 {
   display: inline-block;
   width: 33.33%;
 }
-.work__img__contents a {
+.work__img__contents__link {
   display: inline-block;
   opacity: .7;
 }
-.work__img__contents a:hover {
+.work__img__contents__link:hover {
   opacity: 1;
 }
 .work__bottom {
@@ -197,6 +197,9 @@ h1 {
   font-size: 18px;
   font-weight: 100;
   line-height: 53px;
+}
+.work__mailBtn:hover {
+  color: #333;
 }
 /*skill*/
 .skill {
